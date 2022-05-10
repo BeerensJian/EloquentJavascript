@@ -21,18 +21,22 @@ const isEven = (number) => {
     }
 }
 
-// console.log(isEven(90))
+console.log(isEven(99))
 
-//Exercise 3: Bean Counting
+//Exercise 3: Bean Counting ( Growing functions )
 
-const CountB = (word) => {
+const CountLetter = (word, letter) => {
     let count = 0;
     for (let i = 0; i < word.length; i++) {
-        if (word[i] === "B") {
+        if ( word[i] === letter ) {
             count = count + 1;
         }
     }
     return count;
 }
 
-console.log(CountB("BadBich"));
+const countB = (word) => {
+    CountLetter(word, "B")
+}
+
+console.log(countB("Paddy the BBBaDDyy"))
